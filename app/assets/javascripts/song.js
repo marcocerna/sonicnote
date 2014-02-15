@@ -3,4 +3,6 @@ $(function() {
     $('.test').fadeOut();
 
   });
+
+  $('#demo').play();
 });
