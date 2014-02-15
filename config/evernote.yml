@@ -1,4 +1,4 @@
 development:
-  consumer_key: EVERNOTE_KEY
-  consumer_secret: EVERNOTE_SECRET
+  consumer_key: ENV["EVERNOTE_KEY"]
+  consumer_secret: ENV["EVERNOTE_SECRET"]
   sandbox: true
