@@ -1,4 +1,4 @@
 development:
-  consumer_key: YOUR CONSUMER KEY
-  consumer_secret: YOUR CONSUMER SECRET
-  sandbox: [true or false]
+  consumer_key: EVERNOTE_KEY
+  consumer_secret: EVERNOTE_SECRET
+  sandbox: true
