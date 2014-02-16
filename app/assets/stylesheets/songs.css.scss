@@ -1,3 +1,308 @@
-// Place all the styles related to the songs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+    font-family: 'spinweradbold';
+    src: url('/fonts/spinwerad-webfont.eot');
+    src: url('/fonts/spinwerad-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/spinwerad-webfont.woff') format('woff'),
+         url('/fonts/spinwerad-webfont.ttf') format('truetype'),
+         url('/fonts/spinwerad-webfont.svg#spinweradbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**** General ****/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-table;
+}
+
+.container {
+  color: #53585F;
+
+}
+
+
+.homePage {
+  position: relative;
+  background: url('/images/homepage.png');
+  background-size: cover;
+  padding: 0px;
+  height: 568px;
+
+  .mainHeader {
+    h1 {
+      font: normal 50px/58px 'spinweradbold';
+      margin: 0px;
+      margin-top: 100px;
+      text-align: center;
+      color: #53585F;
+    }
+  }
+
+  .mainNav {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+
+    ul {
+      width: 100%;
+      padding: 0px;
+
+      li {
+        width: 33.33333333333%;
+        float: left;
+        padding: 20px;
+        text-align: center;
+        list-style: none;
+
+        img {
+          width: 100%;
+        }
+
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+
+
+  .test, .test2 {
+    width: 100px;
+  }
+
+  .test2 {
+    opacity: 0;
+  }
+}
+
+
+.loginPage {
+  background: url('/images/login_bg.png');
+  background-size: cover;
+  padding: 0px;
+  display: none;
+  opacity: 0;
+  height: 568px;
+
+  .loginHeader {
+    p {
+      margin: 0;
+      padding: 10px;
+      color: #53585F;
+    }
+
+    h1 {
+      font: normal 40px/48px 'spinweradbold';
+      margin: 0px;
+      margin-top: 60px;
+      text-align: center;
+      color: #53585F;
+    }
+  }
+
+  .mainLogin {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10%;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.songPage {
+  background: url('/images/login_bg.png');
+  background-size: cover;
+  padding: 0px;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  height: 568px;
+
+  .songHeader {
+    width: 100%;
+
+    .favorites {
+      float: right;
+      width: 30%;
+      padding: 15px;
+      margin-bottom: 0px;
+
+      li {
+        list-style: none;
+        width: 50%;
+        display: inline-block;
+        float: left;
+
+        p {
+          text-align: right;
+          padding: 10px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .heart {
+        width: 30px;
+      }
+    }
+  }
+
+  .mainBanner {
+    width: 100%;
+    height: 240px;
+    position: relative;
+
+    .songs {
+      height: 240px;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+
+      .songImage {
+        margin: auto;
+        width: 172px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .playButton {
+        position: absolute;
+        text-align: center;
+        height: 50px;
+        color: white;
+        font-size: 50px;
+        top: 50px;
+        left: 0px;
+        width: 100%;
+
+        p {
+          z-index: 5;
+          margin: 0px;
+          overflow: hidden;
+        }
+
+        .pause {
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      footer {
+        text-align: right;
+        width: 172px;
+        margin: auto;
+      }
+    }
+
+    .song2 {
+      left: -320px;
+    }
+  }
+
+  .genreWindow {
+    position: absolute;
+    width: 100%;
+    bottom: 108px;
+    right: 0px;
+    z-index: 25;
+    height: 171px;
+    overflow: scroll;
+
+    .genreList {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 0px;
+
+      li {
+        list-style: none;
+        width: 100%;
+        padding: 15px 20px;
+        border-top: 1px solid #53585F;
+        background: white;
+
+        p {
+          display: inline;
+          float: left;
+          margin: 0px;
+          font-size: 20px;
+          font-family: 'Helvetica-light';
+        }
+
+        .checkbox {
+          margin: 0px;
+          margin-top: 5px;
+          float: right;
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .rightArrow {
+    position: absolute;
+    bottom: 279px;
+    right: 0px;
+    z-index: 25;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .mainNav {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+
+    ul {
+      width: 100%;
+      padding: 0px;
+
+      li {
+        width: 33.33333333333%;
+        float: left;
+        padding: 20px;
+        text-align: center;
+        list-style: none;
+
+        img {
+          width: 100%;
+        }
+
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+

@@ -8,6 +8,7 @@ gem 'rails', '3.2.15'
 gem 'pg'
 gem 'evernote_oauth'
 gem 'figaro'
+gem 'ejs'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,6 +32,7 @@ group :development, :test do
 end
 
 gem 'jquery-rails'
+gem "jquery_mobile_rails"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

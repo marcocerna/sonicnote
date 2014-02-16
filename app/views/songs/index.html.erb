@@ -1,1 +1,199 @@
-Hello world!
+
+<div class='container'>
+  <div class='homePage row'>
+    <header class='mainHeader col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <h1>MuseNote</h1>
+    </header>
+    <nav class='mainNav'>
+      <ul class='clearfix'>
+        <li class='homeNavButton login'>
+          <img src='/images/login.png'>
+          <p>Log In</p>
+        </li>
+        <li class='homeNavButton explore'>
+          <img src='/images/explore.png'>
+          <p>Explore</p>
+        </li>
+        <li class='homeNavButton favorite'>
+          <img src='/images/favorite.png'>
+          <p>Favorites</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class='loginPage row'>
+    <header class='loginHeader col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <p class='back'>Back</p>
+      <h1>Log In To Evernote</h1>
+    </header>
+    <div class='mainLogin'>
+      <input type='text' id='username' placeholder='Username or Email' />
+      <input type='password' id='password' placeholder='Password' />
+    </div>
+  </div>
+
+  <div class='songPage row'>
+    <header class='songHeader clearfix'>
+      <ul class='favorites'>
+        <li><p>3</p></li>
+        <li class='heart'>
+          <img src='/images/heart.png'>
+        </li>
+      </ul>
+    </header>
+
+    <div class='mainBanner'>
+      <div class='songs song1'>
+        <div class='playButton'>
+          <p class='play song1'>
+          <i class="fa fa-caret-right"></i>
+          </p>
+          <p class='pause song2'>
+          <i class="fa fa-pause"></i>
+          </p>
+        </div>
+        <div class='songImage'>
+          <img id='cover1' src=''>
+        </div>
+        <footer>
+          <p id='title1'></p>
+          <p id='band1'></p>
+        </footer>
+      </div>
+      <div class='songs song2'>
+        <div class='playButton'>
+          <p class='play song2'>
+          <i class="fa fa-caret-right"></i>
+          </p>
+
+          <p class='pause song2'>
+          <i class="fa fa-pause"></i>
+          </p>
+        </div>
+        <div class='songImage'>
+          <img id='cover2' src=''>
+        </div>
+        <footer>
+          <p id='title2'></p>
+          <p id='band2'></p>
+        </footer>
+      </div>
+    </div>
+
+    <div class='rightArrow'>
+      <img src='/images/uparrow.png'>
+    </div>
+
+    <div class='genreWindow'>
+
+      <ul class='genreList'>
+
+   <!--      <li class='clearfix'>
+          <p>Alternative</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='alternative'/>
+          </div>
+        </li> -->
+        <li class='clearfix'>
+          <p>Blues</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='blues'/>
+          </div>
+        </li>
+       <!--  <li class='clearfix'>
+          <p>Christian</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre'  class='category' id='genre' value='christian'/>
+          </div>
+        </li> -->
+        <li class='clearfix'>
+          <p>Classical</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='classical'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Country</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='country'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Easy Listening</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='easy listening'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Electronic</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='electronic'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>House</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre'  class='category' id='genre' value='house'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Hip-Hop</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre'  class='category' id='genre' value='hip hop'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Jazz</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='jazz'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Latin</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='latin'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Pop</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre'  class='category' id='genre' value='pop'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Reggae</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='reggae'/>
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Rock</p>
+          <div class='checkbox'>
+            <input type='checkbox' class='category' id='genre' value='rock'/>
+          </div>
+        </li>>
+        </li>
+
+      </ul>
+    </div>
+    <nav class='mainNav'>
+      <ul class='clearfix'>
+        <li class='homeNavButton login'>
+          <img src='/images/login.png'>
+          <p>Log In</p>
+        </li>
+        <li class='homeNavButton explore'>
+          <img src='/images/explore.png'>
+          <p>Explore</p>
+        </li>
+        <li class='homeNavButton favorite'>
+          <img src='/images/favorite.png'>
+          <p>Favorites</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<audio id="song" src='01Bridges.m4a'></audio>
