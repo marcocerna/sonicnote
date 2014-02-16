@@ -1,18 +1,133 @@
 
 
-<!-- <div class='test'></div> -->
+
 
 <div class='container'>
-  <header class='mainHeader'>
-    <h1>Welcome to MuseNote</h1>
-  </header>
-  <nav class='mainNav'>
-    <ul class='mainNavList'>
-      <li>Log-in</li>
-      <li>Explore</li>
-      <li>Favorites</li>
-    </ul> <!-- end mainNav -->
-  </nav> <!-- end mainNav -->
+  <div class='homePage row'>
+    <header class='mainHeader col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <h1>MuseNote</h1>
+    </header>
+    <nav class='mainNav'>
+      <ul class='clearfix'>
+        <li class='homeNavButton login'>
+          <img src='/images/login.png'>
+          <p>Log In</p>
+        </li>
+        <li class='homeNavButton explore'>
+          <img src='/images/explore.png'>
+          <p>Explore</p>
+        </li>
+        <li class='homeNavButton favorite'>
+          <img src='/images/favorite.png'>
+          <p>Favorites</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class='loginPage row'>
+    <header class='loginHeader col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <p class='back'>Back</p>
+      <h1>Log In To Evernote</h1>
+    </header>
+    <div class='mainLogin'>
+      <input type='text' id='username' placeholder='Username or Email' />
+      <input type='password' id='password' placeholder='Password' />
+    </div>
+  </div>
+
+  <div class='songPage row'>
+    <header class='songHeader clearfix'>
+      <ul class='favorites'>
+        <li><p>3</p></li>
+        <li class='heart'>
+          <img src='/images/heart.png'>
+        </li>
+      </ul>
+    </header>
+
+    <div class='mainBanner'>
+      <div class='songs song1'>
+        <div class='playButton'>
+          <p class='play song1'>
+          <i class="fa fa-caret-right"></i>
+          </p>
+          <p class='pause song2'>
+          <i class="fa fa-pause"></i>
+          </p>
+        </div>
+        <div class='songImage'>
+          <img src='/images/album.png'>
+        </div>
+        <footer>
+          <p>Song</p>
+          <p>Band</p>
+        </footer>
+      </div>
+      <div class='songs song2'>
+        <div class='playButton'>
+          <p class='play song2'>
+          <i class="fa fa-caret-right"></i>
+          </p>
+
+          <p class='pause song2'>
+          <i class="fa fa-pause"></i>
+          </p>
+        </div>
+        <div class='songImage'>
+          <img src='http://www.123callingalldogs.com/savedimages/macexplorer_com-puppy-dog-26.jpg'>
+        </div>
+        <footer>
+          <p>Song</p>
+          <p>Band</p>
+        </footer>
+      </div>
+    </div>
+
+    <div class='rightArrow'>
+      <img src='/images/uparrow.png'>
+    </div>
+
+    <div class='genreWindow'>
+
+      <ul class='genreList'>
+        <li class='clearfix'>
+          <p>Genre Name</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre' />
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Genre Name2</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre' />
+          </div>
+        </li>
+        <li class='clearfix'>
+          <p>Genre Name3</p>
+          <div class='checkbox'>
+            <input type='checkbox' id='genre' />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <nav class='mainNav'>
+      <ul class='clearfix'>
+        <li class='homeNavButton login'>
+          <img src='/images/login.png'>
+          <p>Log In</p>
+        </li>
+        <li class='homeNavButton explore'>
+          <img src='/images/explore.png'>
+          <p>Explore</p>
+        </li>
+        <li class='homeNavButton favorite'>
+          <img src='/images/favorite.png'>
+          <p>Favorites</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
-<audio id="demo" src='01Bridges.m4a'>play</audio>
+<audio id="song" src='01Bridges.m4a'></audio>
