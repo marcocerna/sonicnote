@@ -268,12 +268,13 @@
 
   .rightArrow {
     position: absolute;
-    bottom: 279px;
+    bottom: 171px;
     right: 0px;
     z-index: 25;
+    opacity: 0;
 
     img {
-      width: 100px;
+      width: 100%;
     }
   }
 

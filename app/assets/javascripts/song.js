@@ -137,8 +137,10 @@ $(function() {
     });
   });
 
-  $('.upArrow').on('click', function() {
-    $('.genreWindow').animate({'bottom': '0'});
+  $('.rightArrow').on('click', function() {
+    $('.genreWindow').animate({'right': '0'}, {'complete': function() {
+      $('.rightArrow').animate({'opacity':'0'});
+    }});
   });
 
   $('.song1').on('swiperight', function() {
@@ -158,7 +160,9 @@ $(function() {
   });
 
   $('.genreWindow').on('swiperight', function() {
-    $(this).animate({'right': -($(this).width())});
+    $(this).animate({'right': -($(this).width())}, {'complete': function() {
+      $('.rightArrow').animate({'opacity': '1'});
+    }});
   });
 
   $('.category').on('click', function() {
