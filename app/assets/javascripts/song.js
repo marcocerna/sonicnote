@@ -1,3 +1,4 @@
+
 jQuery.ajaxSettings.traditional = true;
 
 var apiKey = 'A5WKJ2QGNWHMGJN8Q';
@@ -92,7 +93,6 @@ var swipeLeft = function(song1, song2, cover, title, band) {
     song2.animate({'left': '0'});
 
   }
-};
 
 $(function() {
   // $('.homePage').css('height', $(window).height());
