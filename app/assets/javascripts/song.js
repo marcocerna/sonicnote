@@ -93,6 +93,7 @@ var swipeLeft = function(song1, song2, cover, title, band) {
     song2.animate({'left': '0'});
 
   }
+};
 
 $(function() {
   // $('.homePage').css('height', $(window).height());

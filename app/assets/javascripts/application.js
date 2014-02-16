@@ -13,8 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.mobile
-<<<<<<< HEAD
 //= require underscore
-=======
->>>>>>> 224212cc6a3fdb07af46d8e9e739f7d4d78c967d
 //= require_tree .
