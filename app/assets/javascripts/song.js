@@ -1,4 +1,5 @@
 
+
 // test.play();
 
 var swipeRight = function(song1, song2) {
@@ -89,4 +90,3 @@ $(function() {
 
 
   // $('#demo').play();
-});
